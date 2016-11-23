@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.moses.dao.DishInfoDAO">
     <select id="getDishInfoById" resultType="DishInfo">
-        select d_id dId,d_name dName from dish_info where d_id = #{dId}
+        select * from dish_info where d_id = #{dId}
     </select>
 </mapper>
